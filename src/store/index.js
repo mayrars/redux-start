@@ -6,9 +6,9 @@ const counterReducer = (state={counter: 0}, action) =>{
             counter: state.counter + 1
         }
     }
-    if(action.type==='increase'){
+    if(action.type==='increaseby5'){
         return {
-            counter: state.counter + 1
+            counter: state.counter + action.amount
         }
     }
     if(action.type==='decrement'){
